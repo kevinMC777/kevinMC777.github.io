@@ -1,3 +1,4 @@
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animación de aparición de elementos al hacer scroll
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -18,3 +19,18 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.service-card, .skill-item, .project-card').forEach((el) => observer.observe(el));
 
+
+
+const toggleButton = document.getElementById('toggle-dark-mode');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+   
+    if (body.classList.contains('light-mode')) {
+        toggleButton.textContent = '🌞'; 
+    } else {
+        toggleButton.textContent = '🌙';
+    }
+});
