@@ -1,37 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Mi página web</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Bienvenido a mi página web</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Servicios</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<section>
-			<h2>Sección 1</h2>
-			<p>Este es el contenido de la sección 1.</p>
-		</section>
-		
-		<section>
-			<h2>Sección 2</h2>
-			<p>Este es el contenido de la sección 2.</p>
-		</section>
-	</main>
-	
-	<footer>
-		<p>&copy; 2024  página de kevin martienz cortes jejeje xdxd Todos tontos menos yo.</p>
-	</footer>
+    <header class="header">
+        <nav>
+            <div class="logo">kevinMC</div>
+            <div class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+
+</div>
+<div class="mode-toggle">
+    <button id="toggle-dark-mode">🌙</button>
+</div>
+
+
+
+    <section id="home" class="home">
+        <span class="subtitle">Hola, soy kevin martinez cortes </span>
+        <h1>Desarrollador Full Stack</h1>
+        <p class="description">
+            Especializado en desarrollo de software y videojuegos, con experiencia en múltiples lenguajes y tecnologías.
+            Siempre buscando crear soluciones innovadoras y experiencias únicas.
+        </p>
+    
+    
+    </section>
+    <section id="services" class="services">
+        <div class="service-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7xJ4bNPYQdlYQAys7Sl8WMhA-uQ8NEVpZg&s" alt="Desarrollo Web" class="service-img">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web responsivos y aplicaciones web utilizando las últimas tecnologías.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrCH53Du_XKRYxF3ORt_UNccv5pHmmtRvBQ&s" alt="Desarrollo de Juegos" class="service-img">
+            <h3>Desarrollo de Juegos</h3>
+            <p>Desarrollo de videojuegos en Unity, GDevelop y otras plataformas.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMX01kNiwZUABUnIJ4HuiAYdxbGw7-l2iyMg&s" alt="Programación en C++" class="service-img">
+            <h3>Programación en C++</h3>
+            <p>Desarrollo de aplicaciones de escritorio y sistemas de alto rendimiento.</p>
+        </div>
+    </section>
+    
+
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" class="skill-icon">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" class="skill-icon">
+                <p>CSS3</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="skill-icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" class="skill-icon">
+                <p>C++</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Unity_2021.svg" alt="Unity" class="skill-icon">
+                <p>Unity</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDsh7B42M204KoQBFgIEK7DbQcmaN5H0V-g&s" alt="GDevelop" class="skill-icon">
+                <p>GDevelop</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg" alt="Java" class="skill-icon">
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" class="skill-icon">
+                <p>Git</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9AmsBjVV1Ouf8Kk07LdVhfj2PJ-APqBgxQ&s" alt="Proyecto 1" />
+                </div>
+                <div class="project-info">
+                    <h3>Juego en Unity</h3>
+                    <p>Videojuego 3D desarrollado con Unity y C#</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Rb_01XGiBdAgFBYctvc97IBYAytcPi87tg&s" alt="Proyecto 2" />
+                </div>
+                <div class="project-info">
+                    <h3>Aplicación C++</h3>
+                    <p>Sistema de gestión desarrollado en C++</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuxl8nZ6bkbZMSuH-7urjuIyghecrNRxlrE3LZGYQlvhCgFIGVtADFUcUTFd08azHzYjH1VC4ffALKHMvFf5J6gzg8pgjIMtYFDMlGVbxyway7drBzsmj4HnYPxOGbE7F8uHhpnddoMEDZAD117iWgbTj3fKQab_0vqMAo3FMf3tHDM6FTnjgdIfaMSQ/s378/GDevelop%20logo.png" alt="Proyecto 3" />
+                </div>
+                <div class="project-info">
+                    <h3>Juego GDevelop</h3>
+                    <p>Juego 2D creado con GDevelop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+<section id="testimonials" class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>"Kevin es un desarrollador increíble. Su habilidad para resolver problemas y su creatividad en el desarrollo de software son excepcionales."</p>
+            <p>- Juan Pérez, Cliente</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Trabajar con Kevin fue una experiencia excelente. Su enfoque profesional y su conocimiento técnico lo hacen destacar en proyectos desafiantes."</p>
+            <p>- Laura Gómez, Compañera de Trabajo</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Un alumno destacado, siempre dispuesto a aprender y enseñar a los demás. Kevin tiene una gran capacidad para compartir su conocimiento."</p>
+            <p>- Profesor Martínez, Universidad</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="blog" class="blog">
+    <h2>Blog / Artículos Técnicos</h2>
+    <div class="article-cards">
+        <div class="article-card">
+            <h3>Introducción al Desarrollo Web</h3>
+            <p>Un tutorial básico para comenzar con HTML, CSS y JavaScript...</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="article-card">
+            <h3>Cómo Crear un Juego en Unity</h3>
+            <p>Pasos esenciales para crear tu primer juego en Unity y C#...</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="article-card">
+            <h3>Programación en C++</h3>
+            <p>Explorando las bases de C++ para crear aplicaciones eficientes...</p>
+            <a href="#">Leer más</a>
+        </div>
+    </div>
+</section>
